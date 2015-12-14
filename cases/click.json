@@ -1,0 +1,51 @@
+{
+	"frameworkVersion":1,
+	"name":"click",
+	"description":"Test Click function",
+	"player":".egret-player",
+	"steps":[
+		{
+			"type":"wait",
+			"condition":[
+				{
+					"type":"exist",
+					"locator":[
+						"[name=\"btnStart\"]"
+					]
+				}
+			]
+		},{
+			"type":"action",
+			"locator":[
+				"[name=\"btnStart\"]"
+			],
+			"action":"tap",
+			"localX":5,
+			"localY":5
+			
+		},{
+			"type":"wait",
+			"time":400
+		},{
+			"type":"action",
+			"locator":[
+				"[name=\"btnStart\"]"
+			],
+			"action":{
+				"type":"tap",
+				"localX":5,
+				"localY":5
+			}
+		},{
+			"type":"validation",
+			"condition":[
+				{
+					"type":"exist",
+					"locator":[
+						"[name=\"btnStart\"]"
+					]
+				}
+			]
+		}
+	]
+}
